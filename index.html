@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhenfang An | PhD Candidate — SCUT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="ZA Logo" class="logo-img">
+      </a>
+      <button id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-photo">
+        <img src="photo.jpg" alt="Zhenfang An">
+      </div>
+      <div class="hero-text">
+        <h1>Zhenfang An</h1>
+        <p class="hero-chinese">安振方</p>
+        <div class="hero-divider"></div>
+        <p class="hero-title">PhD Candidate in Civil &amp; Hydraulic Engineering</p>
+        <p class="hero-subtitle">School of Architecture, South China University of Technology</p>
+        <p class="hero-description">
+          Researching complex urban systems and spatial perception, with a focus on experience-based urban problem solving in high-density environments.
+        </p>
+        <div class="hero-meta">
+          <span><strong>Email</strong> kistch33@outlook.com</span>
+          <span><strong>Phone</strong> +86 198 5283 2566</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="divider"></div>
+        <div class="education-grid">
+          <div class="edu-item">
+            <div class="edu-year">2022 – Present</div>
+            <div class="edu-details">
+              <h3>PhD Candidate (Direct Track)</h3>
+              <p>South China University of Technology, School of Architecture</p>
+              <p class="edu-note">Civil &amp; Hydraulic Engineering (Architectural Engineering Track) &middot; Expected 2028</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2018 – 2022</div>
+            <div class="edu-details">
+              <h3>Bachelor of Landscape Architecture</h3>
+              <p>Nanjing Forestry University, School of Landscape Architecture</p>
+              <p class="edu-note">GPA 4.0 / 4.5 &middot; Average 91 / 100 &middot; Major Rank 5 / 182</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Research Statement</h2>
+        <div class="divider"></div>
+        <div class="research-statement">
+          <p>My research trajectory has evolved from investigating micro-scale spatial perception to systematic modeling of complex urban systems. Currently, my work focuses on the coupling mechanisms between transit-oriented development (TOD) and multi-dimensional spatial performance within high-density metro hubs. By constructing a comprehensive framework analyzing efficiency, spatial vitality, and urban resilience, I employ digital twin technologies, computational simulation, and multi-objective optimization methodologies to drive the intelligent renovation of underground and station-city environments. I am dedicated to translating high-fidelity empirical data and systemic insights into actionable architectural and urban design strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title">Research Focus</h2>
+        <div class="divider"></div>
+        <div class="focus-grid">
+          <div class="focus-item">
+            <span class="focus-num">01</span>
+            <h3>Station-City Integration &amp; Spatial Performance</h3>
+            <p>Studying the systematic interconnections between transit infrastructure, underground architectural spaces, and urban self-organization through the theoretical lens of multi-dimensional performance optimization.</p>
+          </div>
+          <div class="focus-item">
+            <span class="focus-num">02</span>
+            <h3>Digital Twin &amp; Intelligent Renovation</h3>
+            <p>Investigating the intelligent retrofitting methodologies for high-density metro hub environments, utilizing digital twin coupling, space syntax, and computational simulation to optimize underground space performance.</p>
+          </div>
+          <div class="focus-item">
+            <span class="focus-num">03</span>
+            <h3>Spatial Perception &amp; Human-Centered Optimization</h3>
+            <p>Analyzing micro- and meso-scale user behaviors, cognitive mapping, and spatial perception under high-density constraints to inform performance-driven, human-centered urban design.</p>
+          </div>
+          <div class="focus-item">
+            <span class="focus-num">04</span>
+            <h3>Empirical Evaluation &amp; Practical Design</h3>
+            <p>Developing data-driven diagnostic toolkits and evaluation frameworks that translate complex theoretical models and empirical field data into practical, resilient spatial design solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="folio-viewport" id="folio-viewport">
+        <div class="folio-track" id="folio-track"></div>
+        <button class="folio-nav folio-nav-prev" id="folio-prev" aria-label="Previous">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="folio-nav folio-nav-next" id="folio-next" aria-label="Next">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <span class="folio-counter" id="folio-counter"></span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="divider"></div>
+        <div class="exp-list">
+          <div class="exp-item">
+            <div class="exp-info">
+              <h3>Urban Planning Designer (Intern)</h3>
+              <p>SCUT Design and Research Institute — He Jingtang Architectural Design Research Institute</p>
+            </div>
+            <div class="exp-date">Sep 2024 – Mar 2025</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-info">
+              <h3>Research Assistant</h3>
+              <p>PBB Landscape Research Institute</p>
+            </div>
+            <div class="exp-date">Oct 2023 – Dec 2023</div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Projects</h2>
+        <div class="divider"></div>
+        <div class="project-list">
+          <div class="project-item">
+            <span class="project-num">01</span>
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Tengzhou High-Speed Railway New City &amp; Mozi-Luban Exhibition Hall</h3>
+                <span class="project-date">2025</span>
+              </div>
+              <p>Planning of the Chinese Science and Technology Culture Development History Exhibition Area; Mozi-Luban Ancient Science and Technology Culture Exhibition Hall Design.</p>
+              <div class="project-tags">
+                <span>Urban Design</span><span>Exhibition Hall Architecture</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <span class="project-num">02</span>
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Songtai Industrial — Xiamen Office Headquarters</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>Architectural design bidding project for corporate headquarters office complex.</p>
+              <div class="project-tags">
+                <span>Architectural Design</span><span>Bidding</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <span class="project-num">03</span>
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Changhua Street Historic and Cultural District</h3>
+                <span class="project-date">2023</span>
+              </div>
+              <p>Protection and revitalization of historic and cultural district through urban renewal EPC project.</p>
+              <div class="project-tags">
+                <span>Urban Renewal</span><span>EPC Project</span><span>Heritage Conservation</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <span class="project-num">04</span>
+            <div class="project-body">
+              <div class="project-header">
+                <h3>Zhangxi Industrial Park, Shiqi District, Zhongshan</h3>
+                <span class="project-date">2022</span>
+              </div>
+              <p>Renovation and upgrading of industrial park urban design.</p>
+              <div class="project-tags">
+                <span>Urban Design</span><span>Industrial Renovation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications &amp; Patents</h2>
+        <div class="divider"></div>
+        <p class="section-note">Sorted by journal impact factor</p>
+        <div class="pub-list">
+          <!-- #1: Sustainability — highest IF (SSCI/SCI) -->
+          <div class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-number">1</span>
+              <span class="pub-badge">SSCI / SCI</span>
+            </div>
+            <div class="pub-body">
+              <p class="pub-title">Sustainable Exploration of "Plug-In Design" in Public Space of the Old City in Guangzhou: Case Study on Xudi-Gaodijie</p>
+              <p class="pub-authors">Bai H, Li M*, An Z.</p>
+              <p class="pub-journal"><em>Sustainability</em>, 2023 — Impact Factor 3.9</p>
+            </div>
+          </div>
+          <!-- #2: Modern Urban Research — Peking University Core -->
+          <div class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-number">2</span>
+              <span class="pub-badge">PKU Core</span>
+            </div>
+            <div class="pub-body">
+              <p class="pub-title">Research on the Suitability of Built Environment for Runners in the Central Area of Guangzhou</p>
+              <p class="pub-authors">Li Minzhi*, An Zhenfang, Wei Wenjie</p>
+              <p class="pub-journal"><em>Modern Urban Research</em>, 2023 — Peking University Core Journal</p>
+            </div>
+          </div>
+          <!-- #3: Conference -->
+          <div class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-number">3</span>
+              <span class="pub-badge">Conference</span>
+            </div>
+            <div class="pub-body">
+              <p class="pub-title">Research on Green Urban Design Evaluation Methods Based on Landscape Security Patterns</p>
+              <p class="pub-authors">Li Minzhi, An Zhenfang</p>
+              <p class="pub-journal">Proceedings of the 2024 China Annual National Planning Conference</p>
+            </div>
+          </div>
+          <!-- #4: Landscape Gardening -->
+          <div class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-number">4</span>
+            </div>
+            <div class="pub-body">
+              <p class="pub-title">Analysis of Plant Landscape Factors in Temple Gardens Preferred by Young People</p>
+              <p class="pub-authors">An Zhenfang, Wang Yiming, Sun Jiale, Yue Yuanzheng*</p>
+              <p class="pub-journal"><em>Landscape Gardening</em>, 2021</p>
+            </div>
+          </div>
+          <!-- #5: Patent -->
+          <div class="pub-item">
+            <div class="pub-meta">
+              <span class="pub-number">5</span>
+              <span class="pub-badge">Patent</span>
+            </div>
+            <div class="pub-body">
+              <p class="pub-title">A Variable Chess and Card Seat-Bench (Utility Model Patent)</p>
+              <p class="pub-authors">Second inventor (first inventor: advisor)</p>
+              <p class="pub-journal">Authorized April 8, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <div class="container">
+        <h2 class="section-title">Awards</h2>
+        <div class="divider"></div>
+        <div class="awards-container">
+          <div class="awards-col">
+            <h3>Academic Scholarships &amp; Honors</h3>
+            <ul>
+              <li><span class="award-date">2024</span>Presidential Scholarship for Doctoral Students, SCUT</li>
+              <li><span class="award-date">2023</span>Wens' Juncheng Scholarship</li>
+              <li><span class="award-date">2022</span>Outstanding Graduate Award</li>
+              <li><span class="award-date">2020</span>Academic Innovation Excellence Award &amp; Scholarship</li>
+              <li><span class="award-date">2020</span>Academic Competition Excellence Award &amp; Scholarship</li>
+              <li><span class="award-date">2019</span>Outstanding Student Leader Award &amp; Metasequoia Scholarship</li>
+              <li><span class="award-date">2018–21</span>Outstanding Student Award &amp; Merit Scholarship (3&times;)</li>
+            </ul>
+          </div>
+          <div class="awards-col">
+            <h3>Design Competitions</h3>
+            <ul>
+              <li><span class="award-date">2024</span>Asia-Pacific Regional Runner-up — ULI Hines Urban Design International Student Competition</li>
+              <li><span class="award-date">2023</span>Second Prize — "Vibrancy Cup" Design Competition for Universities in Guangzhou, HK &amp; Macau</li>
+              <li><span class="award-date">2023</span>Silver Award — National Student Design Competition for Zhaoqing High-Tech Zone Automobile Park</li>
+              <li><span class="award-date">2021</span>Third Prize (Lead Designer) — YuanYe Cup Student Design Competition, Urban Planning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="divider"></div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:kistch33@outlook.com">kistch33@outlook.com</a>
+          </div>
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <a href="tel:+8619852832566">+86 198 5283 2566</a>
+          </div>
+          <div class="contact-item">
+            <strong>Address</strong>
+            <p>School of Architecture<br>South China University of Technology<br>Guangzhou, China</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Zhenfang An. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

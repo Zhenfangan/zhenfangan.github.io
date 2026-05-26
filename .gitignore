@@ -1,0 +1,11 @@
+node_modules/
+package.json
+package-lock.json
+extract_pages.mjs
+portfolio-pictures/
+*.pdf
+.DS_Store
+Thumbs.db
+.claude/
+Zhenfang An _ PhD Candidate - South China University of Technology.html
+Zhenfang An _ PhD Candidate - South China University of Technology_files/
