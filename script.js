@@ -132,3 +132,28 @@
     obs.observe(el);
   });
 })();
+
+/* ── Content protection ── */
+(function () {
+  // Disable right-click on images
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // Disable drag on all images
+  document.querySelectorAll('img').forEach(function (img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  });
+
+  // Disable common save shortcuts on images
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+      e.preventDefault();
+      return false;
+    }
+  });
+})();

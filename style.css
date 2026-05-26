@@ -24,6 +24,14 @@ body {
   line-height: 1.75;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
 }
 
 .container { max-width: 960px; margin: 0 auto; padding: 0 40px; }
@@ -240,7 +248,8 @@ main section:nth-child(odd) { background: var(--white); }
 
 /* ── Footer ── */
 footer { padding: 36px 0; border-top: 1px solid var(--border); background: var(--white); text-align: center; }
-footer p { color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.3px; }
+.footer-main { color: var(--text-muted); font-size: 0.82rem; letter-spacing: 0.3px; margin-bottom: 6px; }
+.footer-legal { color: var(--text-muted); font-size: 0.7rem; max-width: 620px; margin: 0 auto; line-height: 1.6; letter-spacing: 0.2px; }
 
 /* ── Scroll animations ── */
 .fade-in {
